@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Layout } from 'antd';
 import WordBox from '../../components/layout/Dictionary/WordBox';
 import Sidebar from '../../components/layout/Sidebar';
+import Comment from '../../components/layout/Dictionary/Comment';
 
 import styled from 'styled-components';
 
@@ -42,6 +43,7 @@ function SearchWord() {
         <PaddedLayout>
             <Content style={{ minHeight: '100vh', marginBottom: 100}}>  {/* Content의 높이를 화면 전체에 맞춤 */}
             <WordBox />
+            <Comment />
             </Content>
             <StyledSider width={320} style={{top: barPosition}}>
                 <Sidebar />

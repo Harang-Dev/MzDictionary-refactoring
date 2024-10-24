@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Typography, Card, Space, Divider } from 'antd';
+import { Card, Space, Divider } from 'antd';
 import styled from 'styled-components';
-import { StarFilled, StarOutlined } from '@ant-design/icons';
+import { StarFilled, StarOutlined, HeartOutlined, MessageOutlined, EyeOutlined } from '@ant-design/icons';
 import axios from 'axios';
 
 const StyledCard = styled(Card)`
@@ -100,6 +100,21 @@ function WordBox(props) {
                             {save ? <StarFilled style={{ color: '#FFD700' }} /> : <StarOutlined />}
                             <span style={{ marginLeft: 8 }}>{totalCount}</span>
                         </button>
+                        <Divider />
+                        <div style={{ width: 154, display: 'flex', justifyContent: 'space-around', margin: '16px 0' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <HeartOutlined style={{ fontSize: 16, color: '#FF4D4F' }} />
+                                <span>102</span>  {/* 하트 수 */}
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <MessageOutlined style={{ fontSize: 16, color: '#1890FF' }} />
+                                <span>58</span>  {/* 댓글 수 */}
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                                <EyeOutlined style={{ fontSize: 16, color: '#52C41A' }} />
+                                <span>304</span>  {/* 조회 수 */}
+                            </div>
+                        </div>
                     </div>
                 </StyledCard>
             </Space>
