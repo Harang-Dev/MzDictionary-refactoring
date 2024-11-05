@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Layout, Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const { Header } = Layout;
 
@@ -33,25 +33,30 @@ const StyledMenu = styled(Menu)`
   background-color: #FFFFFF;
 `;
 
-
-
 const CustomHeader = () => {
+  const location = useLocation();
+  
   return (
     <StyledHeader>
-      <div className="logo">
-        <Logo
-          src='/media/logo.png'
-          alt="Logo"
-        />
-      </div>
-      <StyledMenu theme="light" mode="horizontal">
-        <Link to="/">
-          <Menu.Item key="1">홈</Menu.Item>
-        </Link>
-        <Menu.Item key="2">오늘의 토론</Menu.Item>
-        <Menu.Item key="3">오늘의 퀴즈</Menu.Item>
-        <Menu.Item key="4">단어장</Menu.Item>
-        <Menu.Item key="5">MY</Menu.Item>
+      <Link to="/">
+        <Logo src="/media/logo.png" alt="Logo" />
+      </Link>
+      <StyledMenu theme="light" mode="horizontal" selectedKeys={[location.pathname]}>
+        <Menu.Item key="/">
+          <Link to="/">홈</Link>
+        </Menu.Item>
+        <Menu.Item key="/Discussion">
+          <Link to="/Discussion">오늘의 토론</Link>
+        </Menu.Item>
+        <Menu.Item key="/Quiz">
+          <Link to="/Quiz">오늘의 퀴즈</Link>
+        </Menu.Item>
+        <Menu.Item key="/VocaBook">
+          <Link to="/vocabook">단어장</Link>
+        </Menu.Item>
+        <Menu.Item key="/MY">
+          <Link to="/MY">MY</Link>
+        </Menu.Item>
       </StyledMenu>
     </StyledHeader>
   );

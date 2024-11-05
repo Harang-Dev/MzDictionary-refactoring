@@ -19,7 +19,7 @@ const Header = styled.div`
 `;
 
 const CommentInputWrapper = styled.div`
-    position: relative; /* 부모 요소 기준으로 하단에 버튼 배치 */
+    position: relative;
     width: 690px;
     height: 194px;
 `;
@@ -29,7 +29,7 @@ const CommentInput = styled(Input.TextArea)`
     resize: none !important;
     width: 690px !important;
     height: 194px !important;
-    padding-right: 80px; /* 버튼과 겹치지 않도록 여백 추가 */
+    padding-right: 80px;
 `;
 
 const SubmitButton = styled(Button)`
@@ -39,26 +39,30 @@ const SubmitButton = styled(Button)`
 `;
 
 const ReloadButton = styled(Button)`
-    border: none; /* 테두리 제거 */
-    background: none; /* 배경색 제거 */
-    border-radius: 50%; /* 원형 만들기 */
+    border: none;
+    background: none;
+    border-radius: 50%;
     width: 30px !important;
     height: 30px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; /* 포인터 커서 추가 */
+    cursor: pointer;
     margin-left: 5px;
 `;
 
-const CommentItem = styled.div`
+const CommentItemContainer = styled.div`
     width: 690px;
-    height: 107px;
-    background-color: #f7f7f7; /* 댓글 배경색 */
-    border: 1px solid #e8e8e8; /* 댓글 테두리 */
+    margin-bottom: 10px;
+`;
+
+const CommentBox = styled.div`
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
     padding: 10px;
     margin-bottom: 10px;
-    box-sizing: border-box; /* 추가 */
+    box-sizing: border-box;
+    position: relative;
 `;
 
 const CommentAuthor = styled.div`
@@ -75,22 +79,95 @@ const CommentDate = styled.div`
     color: #999;
 `;
 
-function Comment() {
-    const [sortOrder, setSortOrder] = useState('latest'); // 정렬 상태 관리
-    const [comment, setComment] = useState(''); // 댓글 입력 값
+const LikeDislikeContainer = styled.div`
+    position: absolute;
+    top: 10px;
+    right: 10px;
+`;
 
-    const handleSubmit = () => {
+const ReplyInputWrapper = styled.div`
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+`;
+
+function Comment() {
+    const [sortOrder, setSortOrder] = useState('latest');
+    const [comment, setComment] = useState('');
+    const [comments, setComments] = useState([
+        {
+            author: '사용자1',
+            text: '안녕하세요!',
+            date: '2024-10-24',
+            replies: [],
+            likeCount: 0,
+            dislikeCount: 0,
+            showReplyInput: false,
+        },
+        {
+            author: '사용자2',
+            text: '반갑습니다!',
+            date: '2024-10-25',
+            replies: [],
+            likeCount: 0,
+            dislikeCount: 0,
+            showReplyInput: false,
+        },
+    ]);
+    const [replyText, setReplyText] = useState('');
+
+    const handleCommentSubmit = () => {
         if (comment.trim()) {
-            console.log('댓글 등록:', comment);
-            setComment(''); // 등록 후 입력창 비우기
+            setComments([
+                ...comments,
+                { author: '나', text: comment, date: new Date().toISOString().split('T')[0], replies: [], likeCount: 0, dislikeCount: 0, showReplyInput: false },
+            ]);
+            setComment('');
         }
     };
 
-    // 더미 댓글 데이터
-    const dummyComments = [
-        { author: '사용자1', text: '안녕하세요!', date: '2024-10-24' },
-        { author: '사용자1', text: '안녕하세요!', date: '2024-10-24' },
-    ];
+    const handleReplySubmit = (index) => {
+        if (replyText.trim()) {
+            const newComments = [...comments];
+            newComments[index].replies.push({
+                author: '나',
+                text: replyText,
+                date: new Date().toISOString().split('T')[0],
+                likeCount: 0,
+                dislikeCount: 0,
+            });
+            newComments[index].showReplyInput = false;
+            setComments(newComments);
+            setReplyText('');
+        }
+    };
+
+    const toggleReplyInput = (index) => {
+        const newComments = [...comments];
+        newComments[index].showReplyInput = !newComments[index].showReplyInput;
+        setComments(newComments);
+        setReplyText(''); // Clear reply input when toggling
+    };
+
+    const handleLike = (index, isReply, replyIndex) => {
+        const newComments = [...comments];
+        if (isReply) {
+            newComments[index].replies[replyIndex].likeCount += 1;
+        } else {
+            newComments[index].likeCount += 1;
+        }
+        setComments(newComments);
+    };
+
+    const handleDislike = (index, isReply, replyIndex) => {
+        const newComments = [...comments];
+        if (isReply) {
+            newComments[index].replies[replyIndex].dislikeCount += 1;
+        } else {
+            newComments[index].dislikeCount += 1;
+        }
+        setComments(newComments);
+    };
 
     return (
         <div>
@@ -102,7 +179,7 @@ function Comment() {
             </Header>
 
             <CommentContainer>
-                <h3>66개의 댓글</h3>
+                <h3>{comments.length}개의 댓글</h3>
 
                 <CommentInputWrapper>
                     <CommentInput
@@ -112,7 +189,7 @@ function Comment() {
                         value={comment}
                         onChange={(e) => setComment(e.target.value)}
                     />
-                    <SubmitButton type="primary" onClick={handleSubmit}>
+                    <SubmitButton type="primary" onClick={handleCommentSubmit}>
                         등록
                     </SubmitButton>
                 </CommentInputWrapper>
@@ -131,13 +208,49 @@ function Comment() {
 
                 <Divider />
 
-                {/* 댓글 목록 렌더링 */}
-                {dummyComments.map((comment, index) => (
-                    <CommentItem key={index}>
-                        <CommentAuthor>{comment.author}</CommentAuthor>
-                        <CommentText>{comment.text}</CommentText>
-                        <CommentDate>{comment.date}</CommentDate>
-                    </CommentItem>
+                {comments.map((comment, index) => (
+                    <CommentItemContainer key={index}>
+                        <CommentBox>
+                            <CommentAuthor>{comment.author}</CommentAuthor>
+                            <CommentText>{comment.text}</CommentText>
+                            <CommentDate>{comment.date}</CommentDate>
+                            <LikeDislikeContainer>
+                                <Button onClick={() => handleLike(index, false)}>👍 {comment.likeCount}</Button>
+                                <Button onClick={() => handleDislike(index, false)}>👎 {comment.dislikeCount}</Button>
+                            </LikeDislikeContainer>
+                            <Button type="link" onClick={() => toggleReplyInput(index)}>답글달기</Button>
+                        </CommentBox>
+
+                        {comment.replies.map((reply, replyIndex) => (
+                            <CommentBox key={replyIndex} style={{ marginLeft: '20px' }}>
+                                <CommentAuthor>{reply.author}</CommentAuthor>
+                                <CommentText>{reply.text}</CommentText>
+                                <CommentDate>{reply.date}</CommentDate>
+                                <LikeDislikeContainer>
+                                    <Button onClick={() => handleLike(index, true, replyIndex)}>👍 {reply.likeCount}</Button>
+                                    <Button onClick={() => handleDislike(index, true, replyIndex)}>👎 {reply.dislikeCount}</Button>
+                                </LikeDislikeContainer>
+                            </CommentBox>
+                        ))}
+
+                        {comment.showReplyInput && (
+                            <ReplyInputWrapper>
+                                <Input.TextArea
+                                    rows={2}
+                                    placeholder="대댓글을 입력하세요."
+                                    value={replyText}
+                                    onChange={(e) => setReplyText(e.target.value)}
+                                />
+                                <Button
+                                    type="primary"
+                                    onClick={() => handleReplySubmit(index)}
+                                    style={{ position: 'absolute', bottom: 8, right: 10 }}
+                                >
+                                    등록
+                                </Button>
+                            </ReplyInputWrapper>
+                        )}
+                    </CommentItemContainer>
                 ))}
             </CommentContainer>
         </div>

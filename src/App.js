@@ -4,9 +4,13 @@ import Login from './pages/Auth/LoginPage';
 import SignUp from './pages/Auth/SignUpPage';
 import ForgotPasswordPre from './pages/Auth/ForgotPasswordPrePage';
 import Search from './pages/Dictionary/SearchWord';
+import Discussion from './pages/Discussion/Discussion';
+import TodayQuiz from './pages/Quiz/TodayQuiz';
 import CustomHeader from './components/layout/Header';
 import CustomFooter from './components/layout/Footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import VocaBook from './pages/VocaBook/VocaBook';
+
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -31,7 +35,9 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgotpw" element={<ForgotPasswordPre />} />
           <Route path="/search" element={<Search />} />
-
+          <Route path="/discussion" element={<Discussion />} />
+          <Route path="/quiz" element={<TodayQuiz />} />
+          <Route path="/vocabook" element={<VocaBook />} />
         </Routes>
       </Layout>
     </Router>
