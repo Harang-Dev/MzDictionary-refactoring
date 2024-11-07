@@ -33,7 +33,6 @@ const StyledWordCard = styled(Card)`
 const StyledMeta = styled(Meta)`
     text-align: left;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
     margin-top: 10px;
     padding-left: 10px;

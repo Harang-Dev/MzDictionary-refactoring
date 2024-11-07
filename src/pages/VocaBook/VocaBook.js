@@ -5,8 +5,6 @@ import Sidebar from '../../components/layout/Sidebar';
 
 import styled from 'styled-components';
 
-
-
 const { Content, Sider } = Layout;
 
 const PaddedLayout = styled(Layout)`
