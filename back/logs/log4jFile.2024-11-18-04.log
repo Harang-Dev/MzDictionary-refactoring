@@ -1,0 +1,260 @@
+2024-11-18 16:03:59,537 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-18 16:03:59,549 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:03:59,613 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37056 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:03:59,614 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:03:59,682 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:03:59,682 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:03:59,683 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:03:59,683 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:03:59,686 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:03:59,686 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 72 ms
+2024-11-18 16:03:59,708 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:03:59,770 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:03:59,774 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:03:59,774 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:03:59,776 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.181 seconds (process running for 572.397)
+2024-11-18 16:03:59,777 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:09:52,555 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-18 16:09:52,562 [Thread-19] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:09:52,610 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37056 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:09:52,610 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:09:52,681 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:09:52,682 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:09:52,682 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:09:52,682 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:09:52,685 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:09:52,685 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 74 ms
+2024-11-18 16:09:52,707 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:09:52,768 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:09:52,771 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:09:52,772 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:09:52,774 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.18 seconds (process running for 925.404)
+2024-11-18 16:09:52,775 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:12:30,603 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2024-11-18 16:12:30,606 [Thread-23] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:12:30,658 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37056 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:12:30,658 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:12:30,723 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:12:30,723 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:12:30,723 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:12:30,724 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:12:30,726 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:12:30,726 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 67 ms
+2024-11-18 16:12:30,748 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:12:30,807 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:12:30,811 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:12:30,812 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:12:30,814 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.172 seconds (process running for 1083.448)
+2024-11-18 16:12:30,814 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:18:19,933 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37371 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:18:19,936 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:18:19,950 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-18 16:18:19,950 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-18 16:18:20,333 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:18:20,337 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:18:20,338 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:18:20,338 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:18:20,355 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:18:20,355 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 405 ms
+2024-11-18 16:18:20,453 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:18:20,682 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:18:20,689 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:18:20,697 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:18:20,702 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.879 seconds (process running for 1.224)
+2024-11-18 16:18:31,285 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 16:18:31,285 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-18 16:18:31,286 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-11-18 16:18:31,553 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 65 ms
+2024-11-18 16:49:18,874 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 9 class path changes (4 additions, 1 deletion, 4 modifications)
+2024-11-18 16:49:18,883 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:49:18,960 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37371 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:49:18,960 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:49:19,053 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:49:19,054 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:49:19,054 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:49:19,054 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:49:19,057 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:49:19,057 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 96 ms
+2024-11-18 16:49:19,114 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:49:19,188 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:49:19,192 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:49:19,193 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:49:19,195 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.258 seconds (process running for 1859.666)
+2024-11-18 16:49:19,196 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:49:51,798 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 16:49:51,799 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-18 16:49:51,800 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-11-18 16:49:51,964 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 59 ms
+2024-11-18 16:49:57,997 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
+2024-11-18 16:49:58,143 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@44fd299c
+2024-11-18 16:49:58,145 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
+2024-11-18 16:50:19,681 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-1 - Shutdown initiated...
+2024-11-18 16:50:19,717 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-1 - Shutdown completed.
+2024-11-18 16:50:20,946 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37665 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:50:20,950 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:50:20,962 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-18 16:50:20,962 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor(logTo:252) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-18 16:50:21,334 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:50:21,338 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:50:21,339 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:50:21,339 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:50:21,354 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:50:21,354 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 392 ms
+2024-11-18 16:50:21,465 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:50:21,667 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:50:21,674 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:50:21,681 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:50:21,686 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.844 seconds (process running for 1.141)
+2024-11-18 16:50:50,734 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-18 16:50:50,740 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:50:50,811 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37665 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:50:50,811 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:50:50,909 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:50:50,910 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:50:50,910 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:50:50,910 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:50:50,914 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:50:50,914 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 102 ms
+2024-11-18 16:50:50,952 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:50:51,041 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:50:51,046 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:50:51,047 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:50:51,049 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.259 seconds (process running for 30.504)
+2024-11-18 16:50:51,050 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:50:54,924 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 16:50:54,924 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-18 16:50:54,925 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 0 ms
+2024-11-18 16:50:55,134 [http-nio-8080-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 75 ms
+2024-11-18 16:50:58,347 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-1 - Starting...
+2024-11-18 16:50:58,508 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@f02ea82
+2024-11-18 16:50:58,510 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-1 - Start completed.
+2024-11-18 16:50:58,559 [http-nio-8080-exec-5] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet](log:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.dobby.mzdict.vo.UserVO.toString()" because "info" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.dobby.mzdict.vo.UserVO.toString()" because "info" is null
+	at com.dobby.mzdict.controller.UserController.userLogin(UserController.java:32) ~[main/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2024-11-18 16:54:45,005 [http-nio-8080-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet](log:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.dobby.mzdict.vo.UserVO.toString()" because "info" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.dobby.mzdict.vo.UserVO.toString()" because "info" is null
+	at com.dobby.mzdict.controller.UserController.userLogin(UserController.java:32) ~[main/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2024-11-18 16:55:07,028 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-18 16:55:07,034 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:55:07,040 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-1 - Shutdown initiated...
+2024-11-18 16:55:07,082 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-1 - Shutdown completed.
+2024-11-18 16:55:07,152 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37665 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-18 16:55:07,152 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 16:55:07,252 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-18 16:55:07,252 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:55:07,253 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-18 16:55:07,253 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 16:55:07,256 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-18 16:55:07,256 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 103 ms
+2024-11-18 16:55:07,292 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-18 16:55:07,368 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-18 16:55:07,372 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 16:55:07,373 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 16:55:07,376 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.252 seconds (process running for 286.831)
+2024-11-18 16:55:07,376 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-18 16:55:07,698 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 16:55:07,698 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-18 16:55:07,699 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-11-18 16:55:07,704 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:109) - HikariPool-2 - Starting...
+2024-11-18 16:55:07,784 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool(checkFailFast:554) - HikariPool-2 - Added connection org.mariadb.jdbc.Connection@1d637cbf
+2024-11-18 16:55:07,785 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource(getConnection:122) - HikariPool-2 - Start completed.

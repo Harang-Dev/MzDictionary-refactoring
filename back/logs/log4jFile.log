@@ -1,0 +1,48 @@
+2024-11-20 18:01:21,585 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-20 18:01:21,610 [Thread-11] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:01:21,720 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 51442 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-20 18:01:21,720 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-20 18:01:21,860 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-20 18:01:21,861 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:01:21,861 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-20 18:01:21,861 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-20 18:01:21,866 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-20 18:01:21,867 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 146 ms
+2024-11-20 18:01:21,919 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-20 18:01:22,024 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-20 18:01:22,029 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:01:22,030 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-20 18:01:22,033 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.345 seconds (process running for 944.268)
+2024-11-20 18:01:22,034 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-20 18:10:30,180 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2024-11-20 18:10:30,183 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:30,228 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 51442 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-20 18:10:30,228 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-20 18:10:30,294 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-20 18:10:30,294 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:30,294 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-20 18:10:30,294 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-20 18:10:30,297 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-20 18:10:30,297 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 68 ms
+2024-11-20 18:10:30,328 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-20 18:10:30,392 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-20 18:10:30,396 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:30,396 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-20 18:10:30,398 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.185 seconds (process running for 1492.599)
+2024-11-20 18:10:30,399 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-20 18:10:34,835 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2024-11-20 18:10:34,838 [Thread-19] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:34,900 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 51442 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-20 18:10:34,900 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-20 18:10:34,975 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-20 18:10:34,975 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:34,976 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-20 18:10:34,976 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-20 18:10:34,979 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-20 18:10:34,979 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 78 ms
+2024-11-20 18:10:35,012 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-20 18:10:35,083 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-20 18:10:35,087 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-20 18:10:35,087 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-20 18:10:35,089 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.204 seconds (process running for 1497.29)
+2024-11-20 18:10:35,090 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged

@@ -1,0 +1,48 @@
+2024-11-19 18:03:42,285 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool(run:797) - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=20m43s896ms).
+2024-11-19 18:18:40,169 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool(run:797) - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=14m57s884ms).
+2024-11-19 18:34:10,656 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool(run:797) - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=15m30s487ms).
+2024-11-19 18:45:56,972 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool(run:797) - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m46s314ms).
+2024-11-19 18:49:30,555 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-11-19 18:49:30,566 [Thread-11] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:49:30,573 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource(close:349) - HikariPool-2 - Shutdown initiated...
+2024-11-19 18:49:35,593 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource(close:351) - HikariPool-2 - Shutdown completed.
+2024-11-19 18:49:35,661 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37665 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-19 18:49:35,661 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-19 18:49:35,792 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-19 18:49:35,793 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:49:35,793 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-19 18:49:35,793 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-19 18:49:35,797 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-19 18:49:35,797 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 135 ms
+2024-11-19 18:49:35,842 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-19 18:49:35,943 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-19 18:49:35,948 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:49:35,949 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-19 18:49:35,952 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.315 seconds (process running for 11399.363)
+2024-11-19 18:49:35,953 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-19 18:49:35,961 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-19 18:49:35,961 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-19 18:49:35,962 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 1 ms
+2024-11-19 18:49:38,890 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 34 ms
+2024-11-19 18:57:42,250 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener(onApplicationEvent:211) - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-11-19 18:57:42,255 [Thread-15] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Stopping ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:57:42,319 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarting:50) - Starting MzdictApplication using Java 17.0.12 with PID 37665 (/Users/dobby/IdeaProjects/mzdict/build/classes/java/main started by dobby in /Users/dobby/IdeaProjects/mzdict)
+2024-11-19 18:57:42,320 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStartupProfileInfo:654) - No active profile set, falling back to 1 default profile: "default"
+2024-11-19 18:57:42,426 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(initialize:111) - Tomcat initialized with port 8080 (http)
+2024-11-19 18:57:42,427 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:57:42,427 [restartedMain] INFO  org.apache.catalina.core.StandardService(log:173) - Starting service [Tomcat]
+2024-11-19 18:57:42,427 [restartedMain] INFO  org.apache.catalina.core.StandardEngine(log:173) - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-19 18:57:42,431 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring embedded WebApplicationContext
+2024-11-19 18:57:42,431 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(prepareWebApplicationContext:296) - Root WebApplicationContext: initialization completed in 111 ms
+2024-11-19 18:57:42,474 [restartedMain] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping(<init>:59) - Adding welcome page: class path resource [static/index.html]
+2024-11-19 18:57:42,567 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer(startServer:59) - LiveReload server is running on port 35729
+2024-11-19 18:57:42,572 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol(log:173) - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-19 18:57:42,573 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(start:243) - Tomcat started on port 8080 (http) with context path '/'
+2024-11-19 18:57:42,576 [restartedMain] INFO  com.dobby.mzdict.MzdictApplication(logStarted:56) - Started MzdictApplication in 0.279 seconds (process running for 11885.988)
+2024-11-19 18:57:42,576 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener(onApplicationEvent:63) - Condition evaluation unchanged
+2024-11-19 18:57:43,135 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](log:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-19 18:57:43,136 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:532) - Initializing Servlet 'dispatcherServlet'
+2024-11-19 18:57:43,138 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet(initServletBean:554) - Completed initialization in 2 ms
+2024-11-19 18:57:43,404 [http-nio-8080-exec-5] INFO  org.springdoc.api.AbstractOpenApiResource(getOpenApi:401) - Init duration for springdoc-openapi is: 28 ms
+2024-11-19 18:57:47,969 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver(logException:247) - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.dobby.mzdict.controller.UserController.userLogin(java.lang.String,java.lang.String)]
+2024-11-19 18:59:11,705 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver(logException:247) - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.dobby.mzdict.controller.UserController.userLogin(java.lang.String,java.lang.String)]
