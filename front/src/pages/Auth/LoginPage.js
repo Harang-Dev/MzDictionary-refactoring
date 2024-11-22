@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Form, Input, Button, Typography } from 'antd';
+import { Form, Input, Button, Typography, message } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const { Title, Text } = Typography;
 
@@ -59,9 +60,27 @@ const SignUpText = styled(Text)`
 `;
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
     const onFinish = (values) => {
         console.log('Success:', values);
+        handleLogin(values);
     };
+
+    const handleLogin = async(values) => {
+        try {
+            const response = await axios.post('http://58.126.15.120:8888/user/login', values);
+            if(response) {
+                message.success('환영합니다')
+                navigate('/home', { state: values });
+            }    
+        }
+        catch(error) {
+            message.error('로그인에 실패하였습니다.')
+        }
+
+    }
 
     return (
         <GlobalStyles>
@@ -76,7 +95,7 @@ const Login = () => {
                 >
                     <Title level={5}>Username</Title>
                     <Form.Item
-                        name="username"
+                        name="userId"
                         rules={[{ required: true, message: '아이디를 입력해 주세요!' }]}
                     >
                         <Input

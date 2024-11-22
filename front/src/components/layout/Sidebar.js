@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Layout, Avatar, Button } from 'antd';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const { Sider } = Layout;
 
@@ -108,9 +108,22 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const Sidebar = () => {
+const Sidebar = ({ data }) => {
   const [activeTab, setActiveTab] = useState('word');
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 여부 상태
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const navigate = useNavigate();
+
+  useEffect(()=> {
+    if(data) {
+      setIsLoggedIn(true);
+    }
+  })
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigate("/");
+  }
 
   return (
     <StyledSider>
@@ -130,9 +143,9 @@ const Sidebar = () => {
       {/* 사용자 정보 영역 - 조건부 렌더링 */}
       {isLoggedIn ? (
         <UserInfoContainer>
-          <Avatar size={64} src="user-profile-image-url" />
-          <span style={{ fontSize: 14, fontWeight: 'bold', marginRight: 40 }}>서현우</span>
-          <Button onClick={() => setIsLoggedIn(false)}>로그아웃</Button>
+          <Avatar size={64} src="/media/default-profile.png" />
+          <span style={{ fontSize: 14, fontWeight: 'bold', marginRight: 40 }}>{data.userId}</span>
+          <Button onClick={handleLogout}>로그아웃</Button>
         </UserInfoContainer>
       ) : (
         <Link to = "/login">

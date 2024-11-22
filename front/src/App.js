@@ -10,6 +10,8 @@ import CustomHeader from './components/layout/Header';
 import CustomFooter from './components/layout/Footer';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import VocaBook from './pages/VocaBook/VocaBook';
+import Test from './pages/test';
+import HomeprePage from './pages/Home/HomeprePage';
 
 
 const Layout = ({ children }) => {
@@ -30,7 +32,8 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeprePage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgotpw" element={<ForgotPasswordPre />} />
@@ -38,6 +41,7 @@ function App() {
           <Route path="/discussion" element={<Discussion />} />
           <Route path="/quiz" element={<TodayQuiz />} />
           <Route path="/vocabook" element={<VocaBook />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </Layout>
     </Router>

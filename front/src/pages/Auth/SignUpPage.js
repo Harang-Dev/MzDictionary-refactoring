@@ -46,18 +46,19 @@ const StyledButton = styled(Button)`
 
 const Signup = () => {
     const [userInfo, setUserinfo] = useState({
-        id: '',
-        password: '',
-        nickname: '',
-        email: ''
+        userId: '',
+        passWord: '',
+        userNickName: '',
+        userEmail: ''
     });
-    
+
     const navigate = useNavigate();
-    const API_URL = 'http://localhost:5000';
 
     const handleUpload = async (values) => {
         try {
-            const response = await axios.post(`${API_URL}/SignUp`, values);
+            console.log("전달된 값",values);
+            setUserinfo(values);
+            const response = await axios.post('http://58.126.15.120:8888/user/register', values);
             if (response.data) {
                 message.success('회원가입이 완료되었습니다.');
                 navigate('/');
@@ -69,8 +70,17 @@ const Signup = () => {
     };
 
     const onFinish = (values) => {
-        console.log('Success:', values);
-        handleUpload(values);
+        const { passwordConfirm, ...restValues } = values;
+    
+        const finalValues = {
+            ...restValues,
+            id: '0',
+            createTime: new Date().toISOString(),
+            updateTime: new Date().toISOString(),
+        };
+    
+        console.log('전달할 데이터:', finalValues);
+        handleUpload(finalValues);
     };
 
     return (
@@ -82,7 +92,7 @@ const Signup = () => {
                 >
                     <Title level={5}>Username</Title>
                     <Form.Item
-                        name="id"
+                        name="userId"
                         rules={[{ required: true, message: '아이디를 입력해주세요!' }]}
                     >
                         <Input placeholder="아이디를 입력해주세요"
@@ -95,7 +105,7 @@ const Signup = () => {
                     </Form.Item>
                     <Title level={5}>Password</Title>
                     <Form.Item
-                        name="password"
+                        name="passWord"
                         rules={[{ required: true, message: '비밀번호를 입력해주세요!' }]}
                     >
                         <Input.Password placeholder="비밀번호를 입력해주세요"
@@ -113,7 +123,7 @@ const Signup = () => {
                             { required: true, message: '비밀번호 확인을 입력해주세요!' },
                             ({ getFieldValue }) => ({
                                 validator(_, value) {
-                                    if (!value || getFieldValue('password') === value) {
+                                    if (!value || getFieldValue('passWord') === value) {
                                         return Promise.resolve();
                                     }
                                     return Promise.reject(new Error('비밀번호가 일치하지 않습니다.'));
@@ -131,7 +141,7 @@ const Signup = () => {
                     </Form.Item>
                     <Title level={5}>Nickname</Title>
                     <Form.Item
-                        name="nickname"
+                        name="userNickName"
                         rules={[{ required: true, message: '닉네임을 입력해주세요!' }]}
                     >
                         <Input placeholder="닉네임을 입력해주세요"
@@ -144,7 +154,7 @@ const Signup = () => {
                     </Form.Item>
                     <Title level={5}>Email</Title>
                     <Form.Item
-                        name="email"
+                        name="userEmail"
                         rules={[{ required: true, message: '이메일을 입력해주세요!' }]}
                     >
                         <Input placeholder="이메일 주소를 입력해주세요"
@@ -155,7 +165,6 @@ const Signup = () => {
                                 borderRadius: '4px'
                             }} />
                     </Form.Item>
-
                     <Form.Item>
                         <StyledButton type="primary" htmlType="submit">
                             가입하기

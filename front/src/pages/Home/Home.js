@@ -4,6 +4,7 @@ import SearchBar from '../../components/layout/Home/Search';
 import MyMenu from '../../components/layout/Home/MyMenu';
 import BestWord from '../../components/layout/Home/BestWord';
 import Sidebar from '../../components/layout/Sidebar';
+import { useLocation } from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -25,6 +26,9 @@ const StyledSider = styled(Sider)`
 `;
 
 function Home() {
+    const location = useLocation();
+
+
     const [barPosition, setbarPosition] = useState(400);
 
     const handleScroll = () => {
@@ -33,6 +37,7 @@ function Home() {
     };
 
     useEffect(() => {
+
         window.addEventListener("scroll", handleScroll);
 
         return () => {
@@ -42,13 +47,13 @@ function Home() {
 
     return (
         <PaddedLayout>
-            <Content style={{ minHeight: '100vh', marginBottom: 100}}>  {/* Content의 높이를 화면 전체에 맞춤 */}
+            <Content style={{ minHeight: '100vh', marginBottom: 100 }}>  {/* Content의 높이를 화면 전체에 맞춤 */}
                 <SearchBar />
                 <MyMenu />
                 <BestWord />
             </Content>
-            <StyledSider width={320} style={{top: barPosition}}>
-                <Sidebar />
+            <StyledSider width={320} style={{ top: barPosition }}>
+                <Sidebar data={location.state} />
             </StyledSider>
         </PaddedLayout>
     );
