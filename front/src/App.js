@@ -12,11 +12,14 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import VocaBook from './pages/VocaBook/VocaBook';
 import Test from './pages/test';
 import HomeprePage from './pages/Home/HomeprePage';
+import AddVoca from './pages/AddVoca/AddVoca';
+import MyPage from './pages/MyPage/MyPage';
+import AdminPage from './pages/Admin/AdminPage';
 
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const hideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgotpw" ;
+  const hideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgotpw" || location.pathname === "/admin" ;
 
   return (
     <>
@@ -42,6 +45,10 @@ function App() {
           <Route path="/quiz" element={<TodayQuiz />} />
           <Route path="/vocabook" element={<VocaBook />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/add" element={<AddVoca />} />
+          <Route path="/mypage" element={<MyPage />} />
+          <Route path="/admin" element={<AdminPage />} />
+
         </Routes>
       </Layout>
     </Router>

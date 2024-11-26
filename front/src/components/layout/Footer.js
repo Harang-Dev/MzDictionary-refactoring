@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Layout } from 'antd';
+import { Link, useNavigate } from 'react-router-dom';
 
 const { Footer } = Layout;
 
@@ -34,9 +35,16 @@ const Separator = styled.div`
 `;
 
 const CustomFooter = () => {
+  const navigate = useNavigate();
+  const userId = "12345";
+
+  const handleNavigate = () => {
+    navigate('/add', { state: { userId } });
+  };
+
   return (
     <StyledFooter>
-      <FooterItem>문의하기</FooterItem>
+      <FooterItem onClick={handleNavigate}>추가하기</FooterItem>
       <Separator />
       <FooterItem>오류신고</FooterItem>
       <Separator />

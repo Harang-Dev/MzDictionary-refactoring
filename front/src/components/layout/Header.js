@@ -55,7 +55,7 @@ const CustomHeader = () => {
           <Link to="/vocabook">단어장</Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/">MY</Link>
+          <Link to="/mypage">MY</Link>
         </Menu.Item>
       </StyledMenu>
     </StyledHeader>
