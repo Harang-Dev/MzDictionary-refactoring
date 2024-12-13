@@ -4,6 +4,9 @@ import { Form, Input, Button, Typography, message } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { login } from '../../features/auth/authSlice';
+import { useSelector } from 'react-redux';
 
 const { Title, Text } = Typography;
 
@@ -60,27 +63,44 @@ const SignUpText = styled(Text)`
 `;
 
 const Login = () => {
-
+    const API = process.env.REACT_APP_API_URL;
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    const user = useSelector((state) => state.auth); // 리덕스 상태는 최상단에서 조회합니다.
 
     const onFinish = (values) => {
-        console.log('Success:', values);
         handleLogin(values);
     };
 
-    const handleLogin = async(values) => {
+    const handleLogin = async (values) => {
+        console.log(values);
         try {
-            const response = await axios.post('http://58.126.15.120:8888/user/login', values);
-            if(response) {
-                message.success('환영합니다')
-                navigate('/home', { state: values });
-            }    
-        }
-        catch(error) {
-            message.error('로그인에 실패하였습니다.')
-        }
+            const response = await axios.post(`${API}/user/signin`, values);
+            const data = response.data;  // response.data가 바로 data입니다.
 
-    }
+            if (response.status === 200) {
+                message.success('환영합니다');
+                navigate('/home', { state: values });
+
+                // 로그인 상태를 리덕스에 저장
+                dispatch(
+                    login({
+                        token: data.data,
+                        isLoggedIn: true,
+                    })
+                );
+            } else {
+                message.error('로그인에 실패했습니다.');
+            }
+        }
+        catch (error) {
+            message.error('로그인에 실패하였습니다.');
+        }
+    };
+
+    console.log(user.isLoggedIn); // 현재 로그인 상태 출력
+    console.log(user.token);       // 현재 토큰 출력
 
     return (
         <GlobalStyles>
@@ -89,7 +109,7 @@ const Login = () => {
                     name="login"
                     onFinish={onFinish}
                     initialValues={{
-                        username: '',
+                        userId: '',
                         password: '',
                     }}
                 >
@@ -133,7 +153,7 @@ const Login = () => {
                         </StyledButton>
                     </Form.Item>
 
-                    <Link to = "/forgotpw">
+                    <Link to="/forgotpw">
                         <ForgotPasswordText className="forgot-password" type="link">
                             Forgot password?
                         </ForgotPasswordText>

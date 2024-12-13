@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Layout } from 'antd';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const { Footer } = Layout;
 
@@ -36,10 +36,9 @@ const Separator = styled.div`
 
 const CustomFooter = () => {
   const navigate = useNavigate();
-  const userId = "12345";
 
   const handleNavigate = () => {
-    navigate('/add', { state: { userId } });
+    navigate('/add');
   };
 
   return (

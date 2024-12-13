@@ -38,13 +38,14 @@ const ContentSpan = styled.span`
 `;
 
 function WordBox(props) {
+    const API = process.env.REACT_APP_API_URL;
     const [save, setSave] = useState(false);
     const [totalCount, setTotalCount] = useState(0);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`$(API_KEY)/savedata`);
+                const response = await axios.get(`${API}/savedata`);
                 setTotalCount(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -60,7 +61,7 @@ function WordBox(props) {
 
         const saveData = async () => {
             try {
-                await axios.post(`$(API_KEY)/savedata`, { isSaved: !save });
+                await axios.post(`${API}/savedata`, { isSaved: !save });
             } catch (error) {
                 console.error("Error saving data:", error);
             }

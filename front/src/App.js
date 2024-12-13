@@ -15,15 +15,18 @@ import HomeprePage from './pages/Home/HomeprePage';
 import AddVoca from './pages/AddVoca/AddVoca';
 import MyPage from './pages/MyPage/MyPage';
 import AdminPage from './pages/Admin/AdminPage';
+import Sidebar from './components/layout/Sidebar';
 
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const hideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgotpw" || location.pathname === "/admin" ;
+  const hideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgotpw" || location.pathname === "/admin";
+  const hideSidebar = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgotpw" || location.pathname === "/admin";
 
   return (
     <>
       {!hideHeaderFooter && <CustomHeader />}
+      {!hideSidebar && <Sidebar />}
       {children}
       {!hideHeaderFooter && <CustomFooter />}
     </>
@@ -48,7 +51,6 @@ function App() {
           <Route path="/add" element={<AddVoca />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/admin" element={<AdminPage />} />
-
         </Routes>
       </Layout>
     </Router>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Form, Input, Button, Typography, message } from 'antd';
 import axios from 'axios';
@@ -45,20 +45,13 @@ const StyledButton = styled(Button)`
 `;
 
 const Signup = () => {
-    const [userInfo, setUserinfo] = useState({
-        userId: '',
-        passWord: '',
-        userNickName: '',
-        userEmail: ''
-    });
+    const API = process.env.REACT_APP_API_URL;
 
     const navigate = useNavigate();
 
     const handleUpload = async (values) => {
         try {
-            console.log("전달된 값",values);
-            setUserinfo(values);
-            const response = await axios.post('http://58.126.15.120:8888/user/register', values);
+            const response = await axios.post(`${API}/user/register`, values);
             if (response.data) {
                 message.success('회원가입이 완료되었습니다.');
                 navigate('/');

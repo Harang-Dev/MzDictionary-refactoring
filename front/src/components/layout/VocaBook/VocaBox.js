@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Card, Space } from 'antd';
-import useGetWordBoxs from '../../../hooks/useGetWordBox';
-import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
 
 const { Meta } = Card;
@@ -52,22 +50,6 @@ const WordContainer = styled.div`
 
 
 function VocaBox() {
-    const { 
-        data, 
-        isLoading, 
-        error, 
-        fetchNextPage, 
-        hasNextPage, 
-        isFetchingNextPage
-     } = useGetWordBoxs();
-
-     const {ref, inView} = useInView();
-
-     useEffect(() => {
-        if(inView && hasNextPage && !isFetchingNextPage){
-            fetchNextPage()
-        }
-     }, [inView]);
 
     return (
         <div style={{ marginTop: 60 }}>
@@ -108,7 +90,6 @@ function VocaBox() {
                             <StyledMeta title="다른 단어" description="설명 내용" />
                         </StyledWordCard>
                     </WordContainer>
-                    <h1 ref={ref}>load more</h1>
                 </StyledCard>
             </Space>
         </div>

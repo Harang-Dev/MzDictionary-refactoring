@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Layout, Avatar, Button } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../../features/auth/authSlice';
 
 const { Sider } = Layout;
 
@@ -11,6 +13,11 @@ const StyledSider = styled(Sider)`
   background-color: inherit;
   border-radius: 12px;
   padding: 16px;
+  position: fixed;
+  top: ${({ barPosition }) => barPosition}px;
+  transition: top 0.3s ease-out;
+  z-index: 1000;
+  left: 1200px;
 `;
 
 const StatsContainer = styled.div`
@@ -108,25 +115,59 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const Sidebar = ({ data }) => {
+const Sidebar = () => {
+  const API = process.env.REACT_APP_API_URL;
   const [activeTab, setActiveTab] = useState('word');
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  const [barPosition, setBarPosition] = useState(200);
+  const [userData, setUserData] = useState(null);
+  const { token, isLoggedIn } = useSelector((state) => state.auth);  // redux에서 로그인 상태 가져오기
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  useEffect(()=> {
-    if(data) {
-      setIsLoggedIn(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = 1080 < 200 + window.scrollY ? 1080 : 200 + window.scrollY;
+      setBarPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      const fetchUserData = async () => {
+        try {
+          const response = await fetch(`${API}/user/detail`, {
+            headers: {
+              'X-AUTH-TOKEN': token,
+            },
+          });
+          const data = await response.json();
+          setUserData(data);
+          console.log("유저 데이터 값",userData);
+        } catch (error) {
+          console.error('Failed to fetch user data', error);
+        }
+      };
+
+      fetchUserData();
     }
-  })
+  }, [isLoggedIn, token, API]);
 
   const handleLogout = () => {
-    setIsLoggedIn(false);
-    navigate("/");
-  }
+    dispatch(
+      logout({
+          isLoggedIn: false,
+      })
+  );
+    navigate('/'); 
+  };
 
   return (
-    <StyledSider>
+    <StyledSider barPosition={barPosition}>
       {/* 방문자 수 및 단어수 통계 */}
       <StatsContainer>
         <StatItem>
@@ -144,11 +185,11 @@ const Sidebar = ({ data }) => {
       {isLoggedIn ? (
         <UserInfoContainer>
           <Avatar size={64} src="/media/default-profile.png" />
-          <span style={{ fontSize: 14, fontWeight: 'bold', marginRight: 40 }}>{data.userId}</span>
+          <span style={{ fontSize: 14, fontWeight: 'bold', marginRight: 40 }}>{userData.userId}</span>
           <Button onClick={handleLogout}>로그아웃</Button>
         </UserInfoContainer>
       ) : (
-        <Link to = "/login">
+        <Link to="/login">
           <UserInfoContainer>
             <span style={{ color: '#888888', fontSize: 13, textAlign: 'center', flex: 1 }}>로그인 후 이용해주세요</span>
           </UserInfoContainer>
@@ -158,18 +199,8 @@ const Sidebar = ({ data }) => {
       {/* 탭 메뉴 영역 */}
       <div style={{ width: 320, height: 295, backgroundColor: '#ffffff', border: '1px solid #C7C7C7' }}>
         <TabMenuContainer>
-          <TabItem
-            active={activeTab === 'word'}
-            onClick={() => setActiveTab('word')}
-          >
-            나의 단어
-          </TabItem>
-          <TabItem
-            active={activeTab === 'alert'}
-            onClick={() => setActiveTab('alert')}
-          >
-            알림
-          </TabItem>
+          <TabItem active={activeTab === 'word'} onClick={() => setActiveTab('word')}>나의 단어</TabItem>
+          <TabItem active={activeTab === 'alert'} onClick={() => setActiveTab('alert')}>알림</TabItem>
         </TabMenuContainer>
 
         {/* 탭에 따른 내용 렌더링 */}
@@ -177,9 +208,7 @@ const Sidebar = ({ data }) => {
           <TabContent>
             <TabPlaceholder>나의 단어가 없습니다</TabPlaceholder>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <StyledButton type="primary">
-                추가하기
-              </StyledButton>
+              <StyledButton type="primary">추가하기</StyledButton>
             </div>
           </TabContent>
         )}

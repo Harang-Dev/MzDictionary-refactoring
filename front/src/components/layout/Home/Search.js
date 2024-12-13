@@ -2,6 +2,9 @@ import React from 'react';
 import { Input, Typography } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
+
 
 const { Title } = Typography;
 
@@ -29,7 +32,17 @@ const StyledInput = styled(Input)`
     }
 `;
 
+
 const SearchBar = () => {
+    const API = process.env.REACT_APP_API_URL;
+    const { token, isLoggedIn } = useSelector((state) => state.auth);
+
+    const handleSearch = async() => {
+        const response = await axios.get(`${API}/word/find`);
+    }
+
+
+
     return (
         <SearchContainer>
             <Title level={3} style={{ textAlign: 'left', marginBottom: '8px' }}>단어 검색</Title>

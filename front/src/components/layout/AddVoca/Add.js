@@ -3,6 +3,7 @@ import { Card, Space, Form, Input, Button, message } from 'antd';
 import styled from 'styled-components';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
 const { Meta } = Card;
 
@@ -46,13 +47,25 @@ const FormContainer = styled(Form)`
 `;
 
 function Add() {
+    const API = process.env.REACT_APP_API_URL;
     const navigate = useNavigate();
+    const { token, userId } = useSelector((state) => state.auth);
 
 
 
     const handleSubmit = async(values) => {
+        console.log("전달하는 값", values)
+        console.log("토큰 값", token);
         try {
-            const response = await axios.post('http://58.126.15.120:8888/word/add', values);
+            const response = await axios.post(
+                `${API}/word/add`, 
+                values,
+                {
+                    headers: {
+                        'X-AUTH-TOKEN': token,
+                    }
+                }
+            );
             if(response) {
                 message.success("정상적으로 요청되었습니다.");
                 navigate("/home");
